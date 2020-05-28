@@ -1,7 +1,6 @@
 import boto3
 import os
 import logging
-import json
 import pymysql
 from urllib2 import build_opener, HTTPHandler, Request
 
