@@ -25,7 +25,7 @@ def dboperation(host,username,password):
             print(dbs)
             databaseCollection = cur.fetchall()
             for database in databaseCollection:
-                cur.execute("drop database %s" %database)
+                cur.execute("drop database `%s`" %database)
         return "Success"
     except Exception as e:
         logger.error(e)
